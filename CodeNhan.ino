@@ -3,7 +3,8 @@
 // Thông tin Wi-Fi và ThingsBoard
 #define SSID "VLDT-E303_2.4G"  // Tên Wi-Fi
 #define PASSWORD "dpee2024@vldt" // Mật khẩu Wi-Fi #define SERVER_ADDR "demo.thingsboard.io"
-#define ACCESS_TOKEN "dkPiZeE2zrwuI2PLbU0t" #define cambiendat A0
+#define ACCESS_TOKEN "dkPiZeE2zrwuI2PLbU0t" 
+#define cambiendat A0
 #define MOTOR D0 #define BUZZER D2
 
 unsigned long TimeMark = 0; WiFiClient client;
