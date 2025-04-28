@@ -1,5 +1,6 @@
 #include <ESP8266WiFi.h>
-//#include <espnow.h> #include <SimpleTBDevice.h>
+//#include <espnow.h> 
+#include <SimpleTBDevice.h>
 // Thông tin Wi-Fi và ThingsBoard
 #define SSID "VLDT-E303_2.4G"  // Tên Wi-Fi
 #define PASSWORD "dpee2024@vldt" // Mật khẩu Wi-Fi #define SERVER_ADDR "demo.thingsboard.io"
@@ -11,7 +12,8 @@ unsigned long TimeMark = 0; WiFiClient client;
 TBDevice device(ACCESS_TOKEN);
 
 void setup() { Serial.begin(115200);
-// Kết nối Wi-Fi WiFi.begin(SSID, PASSWORD);
+// Kết nối Wi-Fi 
+WiFi.begin(SSID, PASSWORD);
 Serial.println("Đang kết nối Wi-Fi...");
 while (WiFi.status() != WL_CONNECTED) { delay(500);
 Serial.print(".");
